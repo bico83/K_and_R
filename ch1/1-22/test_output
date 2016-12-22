@@ -1,0 +1,32 @@
+# /etc/fstab
+# Created by anaconda on Wed Sep  2 21:48:23 2015
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+dfadffasdfadf shit
+#
+#----------------------------------------------------------------------------
+--- ----------------------------------------------------------------------------
+---- fuck and shit
+#
+/dev/mapper/fedora-root /                       ext4    defaults
+1 1
+
+UUID=7d86b92c-a205-4ce7-8c28-bdba4792f8cd /boot                   ext4
+defaults         1 2
+
+/dev/mapper/fedora-home /home                   ext4    defaults
+1 2
+
+/dev/mapper/fedora-swap swap                    swap    defaults
+0 0
+
+#Jonas mod 17/Jun/2016
+/dev/sdc1               /run/media/jognu/BigBoy ntfs    ro
+1 2 
+#Jonas mod 22/July/2016
+/dev/sde1               /run/media/jognu/EXTRA  xfs    rw,exec,auto,async
+1 2 
+
+/dev/sde2               /run/media/jognu/portal vfat
+rw,exec,auto,uid=1000,async         1 2 

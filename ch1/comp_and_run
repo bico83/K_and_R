@@ -1,0 +1,16 @@
+#!/bin/bash
+IN_TST_FNAME=test_input
+OUT_TST_FNAME=test_output
+
+if [ -n "$1" ]; then
+    CUR_WD=$1
+    if [ -z "$(gcc -g $CUR_WD/a.c -o $CUR_WD/a.out)" ]; then
+        if [ -f $CUR_WD/$IN_TST_FNAME ]; then
+            cat $CUR_WD/$IN_TST_FNAME | $CUR_WD/a.out > $CUR_WD/$OUT_TST_FNAME
+        else
+            $CUR_WD/a.out
+        fi
+    fi
+else
+    echo "Usage: $(basename $0) WD"
+fi
