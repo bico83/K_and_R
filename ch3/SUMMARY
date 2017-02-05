@@ -1,0 +1,45 @@
+********************************************************************************
+* 	CHAPTER 3: Control Flow
+********************************************************************************
+
+EXPRESSIONS (i=0,printf(),b++) become STATEMENTS when followed by ";" semicolon
+
+Semicolon ";"
+	Statment terminator
+
+Braces "{  }"
+	Group declarations and statements.
+	Compound Statement, Block. 
+	Equivalent to a single statement.
+
+--IF---------------------------------------------------------------------------
+Note: "else" is assigned to closest "if"
+if (expression)
+	statement1
+else
+	statement2
+-------------------------------------------------------------------------------
+
+
+---ELSE-IF---------------------------------------------------------------------
+if (expression)
+	statement
+else if (expression)
+	statement
+else 
+	statement
+-------------------------------------------------------------------------------
+
+---SWITCH----------------------------------------------------------------------
+switch (expression) {
+	case const-expr: statements
+	case const-expr: statements
+	default: statements
+}
+-------------------------------------------------------------------------------
+
+---  DO  ----------------------------------------------------------------------
+do
+	statement
+while (expression);
+-------------------------------------------------------------------------------
