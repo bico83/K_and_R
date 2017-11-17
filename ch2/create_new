@@ -1,0 +1,16 @@
+#!/bin/sh
+
+TEMPLATE_FILE="template.c"
+TARGET_FILE="a.c"
+
+if [ -n "$1" ]; then
+    if [ -d "$1" ]; then
+        echo "Error: $1 already exists"
+        exit -1
+    else
+        mkdir $1
+        cp template.c $1/a.c
+    fi
+else
+    echo "Usage: $(basename $0) NEW_DIR"
+fi
